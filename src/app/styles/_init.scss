@@ -4,5 +4,8 @@
 // Variables, functions, mixins, and other configurations
 @import "abstract/index";
 
-// Reset file, some typographic rules, and some standard styles for commonly used HTML elements
+// Pages
 @import "pages/index";
+
+// Component
+@import "components/index";
