@@ -1,0 +1,8 @@
+// To avoid any potential issue with character encoding
+@charset 'utf-8';
+
+// Variables, functions, mixins, and other configurations
+@import "abstract/index";
+
+// Reset file, some typographic rules, and some standard styles for commonly used HTML elements
+@import "pages/index";
