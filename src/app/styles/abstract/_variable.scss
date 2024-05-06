@@ -27,5 +27,11 @@ $yellow-300: #ece75f;
 $yellow-200: #f1ee8e;
 $yellow-100: #f7f6bc;
 
- $black: #000000;
- $white: #ffffff;
+$black: #000000;
+$white: #ffffff;
+
+$theme-colors: (
+    "primary": $primary-color,
+    "secondary": $secondary-color,
+    "tertinary": $tertinary-color
+);
