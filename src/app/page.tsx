@@ -4,17 +4,8 @@ import "@/styles/globals.scss";
 export default function Home() {
   return (
     <>
-      <main className="background-example">
-
-        <div >
-          <Image
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </div>
+      <main className="">
+        <h1>Kangs Tour</h1>
       </main>
     </>
   );
