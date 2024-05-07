@@ -1,0 +1,12 @@
+.dropdown-menu.show {
+    left: -65px !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: $primary-color !important;
+}
+
+.nav-link {
+    color: $black !important;
+}
