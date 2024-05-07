@@ -23,7 +23,7 @@ const Hero = () => {
       <Carousel.Item className='carousel-container__item'>
         <img src="https://wallpapers.com/images/hd/tumpak-sewu-indonesia-e65reo2nkpk73ps1.jpg" alt="First slide" className='w-100 img-fluid carousel-image' />
         <Carousel.Caption>
-          <span className='carousel-text carousel-text__title'>Beauty of East Java: Dive In and Explore!</span>
+          <span className='carousel-text carousel-text__title'>Beauty of East Java: Dive In!</span>
           <p className='carousel-text carousel-text__subtitle'>
             Experience the breathtaking beauty of East Java! From the majestic peaks of Mount Bromo to the tranquil waters of Ijen Crater
           </p>
