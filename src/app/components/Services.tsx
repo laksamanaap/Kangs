@@ -1,8 +1,15 @@
 import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Services = () => {
     return (
-        <div>Services</div>
+        <>
+            <div className='services'>
+                <Container>
+                    <span>Services</span>
+                </Container>
+            </div>
+        </>
     )
 }
 

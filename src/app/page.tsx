@@ -5,6 +5,7 @@ import FAQ from "@/components/FAQ";
 import Navbars from "@/components/Navbars";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import Packages from "@/components/Packages";
 import Blog from "@/components/Blog";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
@@ -17,6 +18,7 @@ export default function Home() {
         <Navbars />
         <Hero />
         <Services />
+        <Packages />
         <Blog />
         <CTA />
         <Footer />

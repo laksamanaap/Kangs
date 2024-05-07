@@ -1,3 +1,7 @@
+.carousel-container {
+    display: block;
+}
+
 .carousel-image {
     border-radius: 28px;
     object-fit: cover;
@@ -14,7 +18,7 @@
 }
 
 .carousel-control-next {
-    left: 5.25%;
+    left: 5.75%;
 }
 
 .carousel-control-prev-icon,
@@ -60,5 +64,55 @@
         font-size: toRem(18);
         max-width: 50%;
         margin-top: toRem(16);
+    }
+}
+
+.scroll-down-wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // flex-direction: row;
+    bottom: 35px;
+    right: 50px;
+    gap: 8px;
+}
+
+.scroll-down-wrapper span {
+    color: $yellow-light;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.scroll-down-button {
+    // padding: 15px 30px;
+    padding: 13px 35px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 75px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.scroll-down-icon {
+    width: 24px;
+    height: 24px;
+    animation: scrollAnimation 1s infinite alternate;
+}
+
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
     }
 }

@@ -4,7 +4,11 @@
 
 .dropdown-item.active,
 .dropdown-item:active {
-    background-color: $primary-color !important;
+    background-color: $yellow-600 !important;
+}
+
+.dropdown-item {
+    font-weight: 600;
 }
 
 .nav-link {

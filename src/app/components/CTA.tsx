@@ -1,8 +1,13 @@
 import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap';
 
 const CTA = () => {
     return (
-        <div>CTA</div>
+        <>
+            <Container>
+                <div>CTA</div>
+            </Container>
+        </>
     )
 }
 

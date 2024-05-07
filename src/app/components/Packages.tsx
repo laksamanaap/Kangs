@@ -1,14 +1,14 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 
-const Footer = () => {
+const Packages = () => {
   return (
     <>
       <Container>
-        <div>Footer</div>
+        <div>Packages</div>
       </Container>
     </>
   )
 }
 
-export default Footer
+export default Packages

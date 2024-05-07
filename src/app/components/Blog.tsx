@@ -1,8 +1,13 @@
 import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Blog = () => {
     return (
-        <div>Blog</div>
+        <>
+            <Container>
+                <div>Blog</div>
+            </Container>
+        </>
     )
 }
 
