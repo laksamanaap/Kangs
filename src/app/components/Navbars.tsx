@@ -35,9 +35,9 @@ const Navbars = () => {
 
 
     return (
-        <Navbar expand="lg" className="justify-content-between pt-0">
+        <Navbar expand="lg" className="justify-content-between sticky-top navbar-container">
             <Navbar.Brand href="#home">
-                <Image src={logo} alt="Kangs Logo" width={60} height={60} className='img-fluid d-block mx-auto' />
+                <Image src={logo} alt="Kangs Logo" width={65} height={60} className='img-fluid d-block mx-auto' />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbar-nav" />
             <Navbar.Collapse id="navbar-nav">

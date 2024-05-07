@@ -1,0 +1,32 @@
+.carousel-image {
+    border-radius: 28px;
+    object-fit: cover;
+    object-position: center;
+    height: toRem(650) !important;
+    filter: brightness(0.7);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1 !important;
+    top: 70% !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: white;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 30px;
+}
+
+.carousel .carousel-control-next-icon {
+    background-image: url("../../assets/icons/arrow-right.svg")
+}
+
+.carousel .carousel-control-prev-icon {
+    background-image: url("../../assets/icons/arrow-left.svg")
+}
