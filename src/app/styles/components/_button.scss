@@ -1,0 +1,17 @@
+.button-primary {
+    display: block;
+    background-color: $yellow-light;
+    color: $black;
+    padding: toRem(16);
+    border-radius: toRem(24);
+    text-decoration: none;
+    width: toRem(225);
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+    &:hover {
+        background-color: $yellow-200;
+    }
+
+}

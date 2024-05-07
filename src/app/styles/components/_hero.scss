@@ -2,14 +2,19 @@
     border-radius: 28px;
     object-fit: cover;
     object-position: center;
-    height: toRem(650) !important;
-    filter: brightness(0.7);
+    height: toRem(670) !important;
+    filter: brightness(0.6);
 }
 
 .carousel-control-prev,
 .carousel-control-next {
     opacity: 1 !important;
     top: 70% !important;
+    margin-top: 60px;
+}
+
+.carousel-control-next {
+    left: 5.25%;
 }
 
 .carousel-control-prev-icon,
@@ -19,7 +24,7 @@
     outline: white;
     background-size: 100%, 100%;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 3px solid white;
     padding: 30px;
 }
 
@@ -29,4 +34,31 @@
 
 .carousel .carousel-control-prev-icon {
     background-image: url("../../assets/icons/arrow-left.svg")
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 20% !important;
+    bottom: 1.25rem;
+    left: 5% !important;
+    top: 6% !important;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: left !important;
+}
+
+.carousel-text {
+    color: $yellow-light;
+    &__title {
+        font-size: toRem(100);
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        line-height: 1.20;
+    }
+
+    &__subtitle {
+        font-size: toRem(18);
+        max-width: 50%;
+        margin-top: toRem(16);
+    }
 }
