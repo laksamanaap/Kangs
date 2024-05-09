@@ -6,11 +6,11 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <Carousel fade indicators={false} >
+    <Carousel fade indicators={false} interval={3000} >
       <Carousel.Item className='carousel-container__item'>
         <img src="https://wanderingnomada.com/wp-content/uploads/2023/08/Pronowijo-Tumpak-Sewu-1-of-15.jpg" alt="First slide" className='w-100 img-fluid carousel-image' />
         <Carousel.Caption>
-          <span className='carousel-text carousel-text__title'>The Stunning Beauty of East Java.</span>
+          <span className='carousel-text carousel-text__title'>The Stunning of Beautiful East Java.</span>
           <p className='carousel-text carousel-text__subtitle'>
             Experience the breathtaking beauty of East Java! From the majestic peaks of Mount Bromo to the tranquil waters of Ijen Crater
           </p>
@@ -36,7 +36,7 @@ const Hero = () => {
       <Carousel.Item className='carousel-container__item'>
         <img src="https://static.saltinourhair.com/wp-content/uploads/2018/09/23151253/tumpak-sewu-best-waterfall-indonesia-java-foot.jpg" alt="First slide" className='w-100 img-fluid carousel-image' />
         <Carousel.Caption>
-          <span className='carousel-text carousel-text__title'> Getaways Await!<br />Book Now!</span>
+          <span className='carousel-text carousel-text__title'> Getaways Await! Book Now!</span>
           <p className='carousel-text carousel-text__subtitle'>
             Experience the breathtaking beauty of East Java! From the majestic peaks of Mount Bromo to the tranquil waters of Ijen Crater
           </p>

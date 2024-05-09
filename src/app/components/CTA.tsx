@@ -5,7 +5,7 @@ const CTA = () => {
     return (
         <>
             <Container>
-                <div>CTA</div>
+                <div className='cta'>CTA</div>
             </Container>
         </>
     )

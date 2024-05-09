@@ -5,7 +5,7 @@ const Blog = () => {
     return (
         <>
             <Container>
-                <div>Blog</div>
+                <div className='blog'>Blog</div>
             </Container>
         </>
     )

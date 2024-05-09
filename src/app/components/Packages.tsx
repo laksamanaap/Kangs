@@ -5,7 +5,7 @@ const Packages = () => {
   return (
     <>
       <Container>
-        <div>Packages</div>
+        <div className='packages'>Packages</div>
       </Container>
     </>
   )

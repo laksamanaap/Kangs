@@ -1,3 +1,63 @@
 .services {
-    margin-top: toRem(125);
+    margin-top: toRem(100);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: toRem(40);
+    }
+
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(4);
+    }
+
+    &__title {
+        font-size: toRem(60);
+        color: $black;
+        font-weight: 600;
+        text-align: center;
+        text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.17);
+    }
+
+    &__subtitle {
+        font-size: toRem(18);
+        text-align: center;
+    }
+}
+
+.services-card {
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: toRem(10);
+    }
+
+    &__icon {
+        padding: toRem(12);
+        background-color: $gray-light;
+        border-radius: 50%;
+    }
+
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(4);
+    }
+
+    &__title {
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: toRem(14);
+    }
 }
