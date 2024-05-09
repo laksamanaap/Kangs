@@ -48,12 +48,12 @@
 
 .packages-card {
     position: relative;
-
+    
     &__image {
-        position: relative;
+        // position: relative;
+        width: 100%;
         object-fit: cover;
         object-position: center;
-        width: 100%;
         height: toRem(425);
         border-radius: toRem(24);
         filter: brightness(0.85);
@@ -69,7 +69,7 @@
         background-color: $white;
         border-radius: toRem(20);
         padding: toRem(12);
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
         &-top {
             display: flex;

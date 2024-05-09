@@ -34,15 +34,7 @@ const Packages = () => {
       subtitle: "Tumpak Sewu Adventure is amazing place for tracking",
       location: "Lumajang, Jawa Timur"
     },
-    {
-      id: 4,
-      rating: "5.0",
-      image: tumpakSewuImage1,
-      title: "Tumpak Sewu Adventure",
-      price: "18,68",
-      subtitle: "Tumpak Sewu Adventure is amazing place for tracking",
-      location: "Lumajang, Jawa Timur"
-    },
+
   ]
 
   return (
@@ -60,7 +52,7 @@ const Packages = () => {
             {packageValues.map((packageValue) => {
               const { id, rating, image, title, price, location, subtitle } = packageValue;
               return (
-                <Col>
+                <Col lg={3} md={6} sm={12} xs={12}>
                   <PackagesCard
                     id={id}
                     rating={rating}
