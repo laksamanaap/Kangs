@@ -1,3 +1,145 @@
 .packages {
     margin-top: toRem(125);
+
+   &__container {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(56);
+   }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(4);
+    }
+
+    &__title {
+        font-size: toRem(60);
+        color: $yellow-font-dark;
+        font-weight: 600;
+        text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.17);
+    }
+
+    &__subtitle {
+        font-size: toRem(18);
+        color: $yellow-font-light;
+        text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.17);
+    }
+
+    &__button-outline {
+        border: none;
+        background-color: #AA9208;
+        color: $white;
+        border-radius: toRem(12);
+        padding: toRem(16);
+        font-weight: 500;
+        width: toRem(150);
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+.packages-card {
+    position: relative;
+
+    &__image {
+        position: relative;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: toRem(425);
+        border-radius: toRem(24);
+        filter: brightness(0.85);
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(4);
+        position: absolute;
+        bottom: toRem(8);
+        left: toRem(9);
+        max-width: toRem(286);
+        background-color: $white;
+        border-radius: toRem(16);
+        padding: toRem(12);
+
+        &-top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-top-location {
+            color: $black;
+            font-size: toRem(13);
+            font-weight: 600;
+        }
+
+        &-bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: toRem(12);
+
+            &-caption {
+                display: flex;
+                flex-direction: column;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            &-caption-sub {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            &-caption-title {
+                color: $yellow-font-dark;
+                font-weight: 600;
+            }
+
+            &-caption-sub {
+                font-size: toRem(14);
+                color: $yellow-font-light;
+            }
+        }
+
+        &-button {
+            background: $black;
+            border-radius: 50%;
+            width: toRem(50);
+        }
+    }
+
+    &__rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        gap: toRem(4);
+        border-radius: toRem(16);
+        top: toRem(10);
+        z-index: 10;
+        right: toRem(10);
+        padding: toRem(6);
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 toRem(8) toRem(32) 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(toRem(2.5));
+        -webkit-backdrop-filter: blur(toRem(2.5));
+        border: toRem(1) solid rgba(255, 255, 255, 0.18);
+    
+        
+    }
 }

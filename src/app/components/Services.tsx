@@ -1,4 +1,4 @@
-import React from 'react'
+    import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import ServicesCard from './Card/ServicesCard';
 import carIcon from '@/assets/icons/clarity_car-line.svg';
@@ -48,7 +48,6 @@ const Services = () => {
                                 </Col>
                             )
                         })}
-
                     </Row>
                 </Container>
             </div >
