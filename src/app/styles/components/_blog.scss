@@ -31,6 +31,8 @@
 .blog-card {
     position: relative;
     
+    
+
         &__card-col {
             @media (min-width: 992px) {
                 &.col-lg-4 {
@@ -51,14 +53,14 @@
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
             &.first {
-                height: toRem(630);
+                height: toRem(640);
             }
         }
     
         &__info {
             display: flex;
             flex-direction: column;
-            gap: toRem(4);
+            gap: toRem(12);
             max-width: 100%;
             background-color: $white;
             border-bottom-left-radius: toRem(24);
@@ -78,6 +80,15 @@
                 font-size: toRem(13);
                 font-weight: 600;
             }
+
+            &-top-tags {
+                background-color: $yellow-700;
+                padding: toRem(2) toRem(16);
+                border-radius: toRem(10);
+                color: $white;
+                font-size: toRem(13);
+            }
+
     
             &-bottom {
                 display: flex;
@@ -98,6 +109,10 @@
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
+
+                    &.first {
+                        max-width: toRem(535);
+                    }
                 }
     
                 &-caption-title {
@@ -139,5 +154,10 @@
             border: toRem(1) solid rgba(255, 255, 255, 0.18);
     
     
+            span {
+                color: $white;
+                font-size: toRem(13);
+            }
+
         }
 }

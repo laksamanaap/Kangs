@@ -25,33 +25,36 @@ const Blog = () => {
         },
     ]
 
-    const packageValues = [
+    const blogValues = [
         {
             id: 1,
-            rating: "5.0",
+            info: "6 min read",
             image: tumpakSewuImage1,
             title: "Tumpak Sewu Adventure",
-            price: "18,68",
-            subtitle: "Tumpak Sewu Adventure is amazing place for tracking",
-            location: "Lumajang, Jawa Timur"
+            date: "24 Feb, 2024",
+            subtitle: "Embark on an unforgettable adventure amidst the majestic landscapes of Tumpak Sewu. Join us for an exhilainfo journey through nature's wonders.",
+            tags: ['Partner', 'Nature', 'Waterfall'],
+            author: "Melmel"
         },
         {
             id: 2,
-            rating: "5.0",
+            info: "6 min read",
             image: tumpakSewuImage1,
             title: "Tumpak Sewu Adventure",
-            price: "18,68",
-            subtitle: "Tumpak Sewu Adventure is amazing place for tracking",
-            location: "Lumajang, Jawa Timur"
+            date: "24 Feb, 2024",
+            subtitle: "Embark on an unforgettable adventure amidst the majestic landscapes of Tumpak Sewu. Join us for an exhilainfo journey through nature's wonders.",
+            tags: ['Partner', 'Nature', 'Waterfall'],
+            author: "Melmel"
         },
         {
             id: 3,
-            rating: "5.0",
+            info: "6 min read",
             image: tumpakSewuImage1,
             title: "Tumpak Sewu Adventure",
-            price: "18,68",
-            subtitle: "Tumpak Sewu Adventure is amazing place for tracking",
-            location: "Lumajang, Jawa Timur"
+            date: "24 Feb, 2024",
+            subtitle: "Embark on an unforgettable adventure amidst the majestic landscapes of Tumpak Sewu. Join us for an exhilainfo journey through nature's wonders.",
+            tags: ['Partner', 'Nature', 'Waterfall'],
+            author: "Melmel"
         },
 
     ]
@@ -75,10 +78,10 @@ const Blog = () => {
                 </Row>
                 <Row style={{ height: '100%' }}>
                     <Col style={{ height: '100%', marginBottom: '1rem' }}>
-                        <BlogCard {...packageValues[0]} />
+                        <BlogCard {...blogValues[0]} />
                     </Col>
                     <Col xs={12} md={6}>
-                        {packageValues.slice(1).map((packageValue, index) => (
+                        {blogValues.slice(1).map((packageValue, index) => (
                             <div key={index} style={{ marginBottom: '1rem' }}>
                                 <BlogCard {...packageValue} />
                             </div>
