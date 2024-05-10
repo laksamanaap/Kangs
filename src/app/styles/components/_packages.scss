@@ -34,15 +34,20 @@
     }
 
     &__button-outline {
-        border: none;
-        background-color: #AA9208;
-        color: $white;
-        border-radius: toRem(12);
-        padding: toRem(16);
-        font-weight: 500;
-        width: toRem(150);
+        border-radius: toRem(50);
+        padding: toRem(10);
+        font-weight: 600;
+        width: 9.375rem;
         text-align: center;
         text-decoration: none;
+        color: black;
+        border: toRem(3) solid $yellow-700;
+        transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+        
+        &:hover {
+            background-color: $yellow-700;
+            color: $white;
+        }
     }
 }
 
@@ -58,12 +63,16 @@
         }
     }
 
+    &__card-row {
+
+    }
+
     &__image {
         // position: relative;
         width: 100%;
         object-fit: cover;
         object-position: center;
-        height: toRem(425);
+        height: toRem(435);
         border-radius: toRem(24);
         filter: brightness(0.85);
     }

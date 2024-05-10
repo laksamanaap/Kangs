@@ -20,6 +20,7 @@ export default function Home() {
         <Services />
         <Packages />
         <Blog />
+        <FAQ />
         <CTA />
         <Footer />
       </main>

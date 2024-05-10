@@ -34,8 +34,6 @@ const Packages = () => {
       subtitle: "Tumpak Sewu Adventure is amazing place for tracking",
       location: "Lumajang, Jawa Timur"
     },
-
-
   ]
 
   return (
@@ -49,7 +47,7 @@ const Packages = () => {
             </div>
             <Link href={'#'} className='packages__button-outline'>See All</Link>
           </div>
-          <Row className='gap-md-5 gap-lg-1 justify-content-center'>
+          <Row className='packages-card__card-row gap-md-5 gap-lg-1 justify-content-center'>
             {packageValues.map((packageValue, index) => {
               return (
                 <Col key={index} md={12} lg={4} className='packages-card__card-col'>
