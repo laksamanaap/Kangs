@@ -35,6 +35,7 @@ const Packages = () => {
       location: "Lumajang, Jawa Timur"
     },
 
+
   ]
 
   return (
@@ -48,20 +49,11 @@ const Packages = () => {
             </div>
             <Link href={'#'} className='packages__button-outline'>See All</Link>
           </div>
-          <Row className='gap-1'>
-            {packageValues.map((packageValue) => {
-              const { id, rating, image, title, price, location, subtitle } = packageValue;
+          <Row className='gap-md-5 gap-lg-1 justify-content-center'>
+            {packageValues.map((packageValue, index) => {
               return (
-                <Col lg={3} md={6} sm={12} xs={12}>
-                  <PackagesCard
-                    id={id}
-                    rating={rating}
-                    image={image}
-                    title={title}
-                    price={price}
-                    location={location}
-                    subtitle={subtitle}
-                  />
+                <Col key={index} md={12} lg={4} className='packages-card__card-col'>
+                  <PackagesCard {...packageValue} />
                 </Col>
               )
             })}
