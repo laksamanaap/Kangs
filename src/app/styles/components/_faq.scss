@@ -1,3 +1,32 @@
 .faq {
     margin-top: toRem(125);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(56);
+    }
+
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: toRem(8);
+    }
+
+    &__title {
+        font-size: toRem(60);
+        color: $yellow-font-dark;
+        font-weight: 600;
+        text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.17);
+    }
+
+    &__subtitle {
+        font-size: toRem(18);
+        color: $yellow-font-light;
+        text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.17);
+        max-width: 50%;
+        text-align: center;
+    }
+
 }

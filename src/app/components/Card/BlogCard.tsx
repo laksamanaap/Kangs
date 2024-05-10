@@ -10,12 +10,12 @@ import arrowRightIcon from '@/assets/icons/arrow-right-card.svg'
 const BlogCard = ({ id, info, image, title, date, tags, subtitle, author }: any) => {
     console.log(tags, 'tags blog')
     return (
-        <div className={`blog-card ${id === 1 && 'first'}`}>
+        <div className={`blog-card ${id === 1 ? 'first' : ''}`}>
             <div className='blog-card__rating'>
                 <Image alt='star icon' src={clockIcon} />
                 <span>{info}</span>
             </div>
-            <Image src={image} alt={title} className={`blog-card__image ${id === 1 && 'first'}`} />
+            <Image src={image} alt={title} className={`blog-card__image ${id === 1 ? 'first' : ''}`} />
             <div className='blog-card__info'>
                 <div className="blog-card__info-top">
                     <div className='d-flex gap-2'>

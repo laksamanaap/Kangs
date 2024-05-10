@@ -141,7 +141,7 @@
             justify-content: center;
             align-items: center;
             position: absolute;
-            gap: toRem(4);
+            gap: toRem(6);
             border-radius: toRem(16);
             top: toRem(10);
             z-index: 10;
@@ -160,4 +160,20 @@
             }
 
         }
+}
+
+.blog-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.blog-grid-item {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 991px) {
+    .blog-grid-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
 }

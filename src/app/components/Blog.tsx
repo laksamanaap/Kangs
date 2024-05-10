@@ -76,18 +76,30 @@ const Blog = () => {
                         </div>
                     </Col>
                 </Row>
-                <Row style={{ height: '100%' }}>
+                {/* <Row style={{ height: '100%' }}>
                     <Col style={{ height: '100%', marginBottom: '1rem' }}>
                         <BlogCard {...blogValues[0]} />
                     </Col>
-                    <Col xs={12} md={6}>
+                    <Col xs={12} md={12} lg={12} xl={6}>
                         {blogValues.slice(1).map((packageValue, index) => (
                             <div key={index} style={{ marginBottom: '1rem' }}>
                                 <BlogCard {...packageValue} />
                             </div>
                         ))}
                     </Col>
-                </Row>
+                </Row> */}
+                <div className="blog-grid-container">
+                    <div className="blog-grid-item">
+                        <BlogCard {...blogValues[0]} />
+                    </div>
+                    <div className="blog-grid-item">
+                        {blogValues.slice(1).map((packageValue, index) => (
+                            <div key={index} className="blog-grid-item">
+                                <BlogCard {...packageValue} />
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </Container>
         </div>
     )
