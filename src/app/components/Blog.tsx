@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Link from 'next/link';
 import BlogCard from './Card/BlogCard';
 import tumpakSewuImage1 from '@/assets/tumpakSewu/tumpakSewu1.JPG';
+import Tags from './Tags';
 
 const Blog = () => {
     interface BlogProps {
@@ -57,7 +58,10 @@ const Blog = () => {
             <Container className='blog__container'>
                 <Row className='align-items-center justify-content-center'>
                     <Col md={12} lg={6}>
-                        <span className='blog__title'>Blog About Travelling</span>
+                        <div className='blog__caption'>
+                            <Tags title='Blog' />
+                            <span className='blog__title'>Blog About Travelling</span>
+                        </div>
                     </Col>
                     <Col>
                         <div className='blog__subtitle-wrapper'>

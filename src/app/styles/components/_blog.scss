@@ -7,6 +7,12 @@
         gap: toRem(56);
     }
 
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(8);
+    }
+
     &__title {
         font-size: toRem(60);
         color: $yellow-font-dark;

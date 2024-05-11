@@ -6,7 +6,7 @@ interface TagsProps {
 
 const Tags: React.FC<TagsProps> = ({ title }) => {
     return (
-        <span>{title}</span>
+        <span className='main__summary'>{title}</span>
     );
 };
 

@@ -1,3 +1,15 @@
+.main {
+    &__summary {
+        background-color: #AA9208;
+        color: $white;
+        padding: toRem(1) toRem(16);
+        border-radius: toRem(8);
+        font-size: toRem(13);
+        max-width: toRem(100);
+        text-align: center;
+    }
+}
+
 .main-layout {
     padding: toRem(20);
     padding-top: 0;
