@@ -1,0 +1,14 @@
+.accordion-button:not(.collapsed) {
+    color: $yellow-font-light !important;
+    font-weight: 600;
+    background-color: $yellow-light !important;
+    box-shadow: unset !important;
+}
+
+.accordion-button:focus {
+    box-shadow: unset !important;
+}
+
+.accordion-body {
+    font-size: toRem(14);
+}
