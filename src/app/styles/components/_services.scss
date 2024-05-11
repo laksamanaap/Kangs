@@ -11,6 +11,7 @@
 
     &__caption {
         display: flex;
+        align-items: center;
         flex-direction: column;
         gap: toRem(4);
     }

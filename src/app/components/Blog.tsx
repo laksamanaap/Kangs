@@ -6,26 +6,18 @@ import BlogCard from './Card/BlogCard';
 import tumpakSewuImage1 from '@/assets/tumpakSewu/tumpakSewu1.JPG';
 
 const Blog = () => {
+    interface BlogProps {
+        id: number,
+        info: string,
+        image: any,
+        title: string,
+        date: string,
+        subtitle: string,
+        tags: string[],
+        author: string
+    }
 
-    const blogValue = [
-        {
-            id: 1,
-            title: 'Tumpak Sewu Is Amazing Place For Bonding With Your Partner',
-            tags: ['Partner', 'Nature', 'Waterfall']
-        },
-        {
-            id: 2,
-            title: 'Tumpak Sewu Is Amazing Place For Bonding With Your Partner',
-            tags: ['Partner', 'Nature', 'Waterfall']
-        },
-        {
-            id: 3,
-            title: 'Tumpak Sewu Is Amazing Place For Bonding With Your Partner',
-            tags: ['Partner', 'Nature', 'Waterfall']
-        },
-    ]
-
-    const blogValues = [
+    const blogValues: Array<BlogProps> = [
         {
             id: 1,
             info: "6 min read",
@@ -76,18 +68,6 @@ const Blog = () => {
                         </div>
                     </Col>
                 </Row>
-                {/* <Row style={{ height: '100%' }}>
-                    <Col style={{ height: '100%', marginBottom: '1rem' }}>
-                        <BlogCard {...blogValues[0]} />
-                    </Col>
-                    <Col xs={12} md={12} lg={12} xl={6}>
-                        {blogValues.slice(1).map((packageValue, index) => (
-                            <div key={index} style={{ marginBottom: '1rem' }}>
-                                <BlogCard {...packageValue} />
-                            </div>
-                        ))}
-                    </Col>
-                </Row> */}
                 <div className="blog-grid-container">
                     <div className="blog-grid-item">
                         <BlogCard {...blogValues[0]} />

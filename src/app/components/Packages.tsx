@@ -3,10 +3,20 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PackagesCard from './Card/PackagesCard';
 import Link from 'next/link';
 import tumpakSewuImage1 from '@/assets/tumpakSewu/tumpakSewu1.JPG';
+import Tags from './Tags';
 
 const Packages = () => {
+  interface PackageProps {
+    id: number;
+    rating: string;
+    image: any;
+    title: string;
+    price: string;
+    subtitle: string;
+    location: string;
+  }
 
-  const packageValues = [
+  const packageValues: Array<PackageProps> = [
     {
       id: 1,
       rating: "5.0",
@@ -42,6 +52,7 @@ const Packages = () => {
         <Container className='packages__container'>
           <div className="packages__wrapper">
             <div className="packages__caption">
+              <Tags title='Packages' />
               <span className="packages__title">Choose Your Package</span>
               <span className="packages__subtitle">Explore the Latest Top Destinations From the exotic adventures</span>
             </div>

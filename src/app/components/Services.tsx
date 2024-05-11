@@ -1,10 +1,18 @@
-    import React from 'react'
+import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import ServicesCard from './Card/ServicesCard';
 import carIcon from '@/assets/icons/clarity_car-line.svg';
+import Tags from './Tags';
 
 const Services = () => {
-    const servicesValue = [
+    interface ServiceProps {
+        id: number,
+        icon: any,
+        title: string,
+        subtitle: string
+    }
+
+    const servicesValue: Array<ServiceProps> = [
         {
             id: 1,
             icon: carIcon,
@@ -36,15 +44,15 @@ const Services = () => {
             <div className='services'>
                 <Container className='services__container'>
                     <div className='services__caption'>
+                        <Tags title='Benefits' />
                         <span className='services__title'>Benefits For You</span>
                         <span className="services__subtitle">Enjoy tailored advantages designed to enhance your satisfaction.</span>
                     </div>
                     <Row className='gap-4'>
-                        {servicesValue.map((service) => {
-                            const { id, icon, title, subtitle } = service
+                        {servicesValue.map((service, index) => {
                             return (
-                                <Col>
-                                    <ServicesCard id={id} icon={icon} title={title} subtitle={subtitle} />
+                                <Col key={index}>
+                                    <ServicesCard  {...service} />
                                 </Col>
                             )
                         })}
