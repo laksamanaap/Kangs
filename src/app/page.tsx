@@ -14,7 +14,7 @@ import "@/styles/globals.scss";
 export default function Home() {
   return (
     <>
-      <main>
+      <main className="main-layout">
         <Navbars />
         <Hero />
         <Services />
@@ -22,8 +22,8 @@ export default function Home() {
         <Blog />
         <FAQ />
         <CTA />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }

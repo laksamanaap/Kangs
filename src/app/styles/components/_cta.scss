@@ -1,3 +1,120 @@
 .cta {
     margin-top: toRem(125);
+
+    &__image {
+        position: relative;
+        width: 100%;
+        height: toRem(368);
+        border-radius: toRem(24);
+        overflow: hidden;
+    }
+
+    &__gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+        border-radius: toRem(24);
+    }
+
+    &__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(4);
+        color: $yellow-light;
+        z-index: 10;
+        margin-left: toRem(30);
+
+        span {
+            font-size: toRem(50);
+            font-weight: 600;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: toRem(14);
+        }
+    }
+
+    &__form-message {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(8);
+
+        input {
+            position: relative;
+            border: toRem(1) solid $black;
+            padding: toRem(8);
+            border-radius: toRem(12);
+        }
+    }
+
+    &__form-message-button {
+        padding: toRem(6);
+        height: toRem(32);
+        background-color: $yellow-font-dark;
+        width: toRem(32);
+        transform: translate(toRem(5), toRem(5));
+        border-radius: toRem(8);
+        position: absolute;
+        right: toRem(50);
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+
+    &__form {   
+        background-color: $white;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding: toRem(16);
+        border-radius: toRem(12);
+    }
+
+    &__form-summary {
+        justify-content: center;
+        border-radius: 8px;
+        color: #554904;
+        padding: 6px;
+        text-align: center;
+        display: flex;
+        background: #f6f6f6;
+        font-size: toRem(13);
+        font-weight: 600;
+    }
+    
+    &__form-wrapper {
+        z-index: 10;
+        margin-right: toRem(20);
+        padding: toRem(24);
+        font-size: toRem(16);
+        border-radius: toRem(16);
+        transition: background-color 0.3s ease;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(2.5px);
+        -webkit-backdrop-filter: blur(2.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: #fff;
+        width: 40%;
+        cursor: pointer;
+    }
+
 }
