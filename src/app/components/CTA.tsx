@@ -20,7 +20,7 @@ const CTA = () => {
                         <div className="cta__form-wrapper">
                             <div className="cta__form">
                                 <div className='cta__form-message'>
-                                    <input type="text" onChange={(event) => setMessageValue(event.target.value)} />
+                                    <input type="text" onChange={(e: any) => setMessageValue(e.target.value)} />
                                     <Image src={sendMessageIcon} alt="Send Message" className='cta__form-message-button' onClick={() => {
                                         const whatsappLink = `https://api.whatsapp.com/send/?phone=6281230664252&text=${encodeURIComponent(messageValue)}`;
                                         window.open(whatsappLink);
