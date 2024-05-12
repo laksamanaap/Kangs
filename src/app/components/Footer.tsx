@@ -1,5 +1,12 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
+import Image from 'next/image';
+import Link from 'next/link';
+import logoKangs from '@/assets/Logo KANGS (Black).png';
+import logoTiktok from '@/assets/icons/tiktok.svg';
+import logoTwitter from '@/assets/icons/twitter.svg';
+import logoInstagram from '@/assets/icons/instagram.svg';
+// import logoTiktok from '@/assets/icons/tiktok.svg';
 
 const Footer = () => {
   return (
@@ -10,22 +17,19 @@ const Footer = () => {
             <div className="row footer__content-wrap mt-3">
               <div className="col-md-12 col-lg-5 mb-4">
                 <div className="footer__content-left-wrap">
-                  <img src="assets/icons/footer__logo.svg" />
+                  <Image src={logoKangs} alt={'logo-footer'} width={100} height={100} />
                   <div className="footer__description paragraph-normal-regular">
-                    We are creative people who provide the best way to you who want to have a new comfortable and suitable place to live
+                    Experience unforgettable vacations with us! We create tailored getaways for every dream. From beaches to mountains, we've got you covered. Let's make your wanderlust a reality
                   </div>
                   <div className="footer__socials">
                     <div className="footer__socials-item" >
-                      <a href="#"><img src="assets/icons/call.svg" /></a>
+                      <Link href="#"><Image alt={'social-icons'} width={16} height={16} src={logoTiktok} /></Link>
                     </div>
                     <div className="footer__socials-item" >
-                      <a href="#"><img src="assets/icons/instagram.svg" /></a>
+                      <Link href="#"><Image alt={'social-icons'} width={16} height={16} src={logoTwitter} /></Link>
                     </div>
                     <div className="footer__socials-item" >
-                      <a href="#"><img src="assets/icons/facebook.svg" /></a>
-                    </div>
-                    <div className="footer__socials-item" >
-                      <a href="#"><img src="assets/icons/twitter.svg" /></a>
+                      <Link href="#"><Image alt={'social-icons'} width={16} height={16} src={logoInstagram} /></Link>
                     </div>
                   </div>
                 </div>
