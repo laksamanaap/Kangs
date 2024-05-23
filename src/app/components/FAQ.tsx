@@ -14,7 +14,7 @@ const FAQ = () => {
                     <Tags title="FAQ" />
                     <span className="faq__title">Frequently Asked Question</span>
                     <span className="faq__subtitle">
-                        We've compiled a list of commonly asked questions to provide you with quick and informative answers
+                        Weve compiled a list of commonly asked questions to provide you with quick and informative answers
                     </span>
                 </div>
                 <Accordions />

@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Temporary will detaily updated
 const ButtonScrollDown = ({ onClick }: any) => {
     return (
         <div className="scroll-down-wrapper">

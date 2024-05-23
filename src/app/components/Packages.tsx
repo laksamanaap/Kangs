@@ -4,17 +4,17 @@ import PackagesCard from './Card/PackagesCard';
 import Link from 'next/link';
 import tumpakSewuImage1 from '@/assets/tumpakSewu/tumpakSewu1.JPG';
 import Tags from './Tags';
+interface PackageProps {
+  id: number;
+  rating: string;
+  image: any;
+  title: string;
+  price: string;
+  subtitle: string;
+  location: string;
+}
 
 const Packages = () => {
-  interface PackageProps {
-    id: number;
-    rating: string;
-    image: any;
-    title: string;
-    price: string;
-    subtitle: string;
-    location: string;
-  }
 
   const packageValues: Array<PackageProps> = [
     {

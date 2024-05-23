@@ -7,8 +7,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 import arrowRightIcon from '@/assets/icons/arrow-right-card.svg'
 
-const BlogCard = ({ id, info, image, title, date, tags, subtitle, author }: any) => {
-    console.log(tags, 'tags blog')
+interface BlogCardProps {
+    id: number,
+    info: string,
+    image: any,
+    title: string,
+    date: string,
+    subtitle: string,
+    tags: string[],
+    author: string
+}
+
+const BlogCard = ({ id, info, image, title, date, tags, subtitle, author }: BlogCardProps) => {
+    // console.log(tags, 'tags blog')
     return (
         <div className={`blog-card ${id === 1 ? 'first' : ''}`}>
             <div className='blog-card__rating'>

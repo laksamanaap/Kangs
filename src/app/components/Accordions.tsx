@@ -1,13 +1,13 @@
 import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
 
-const Accordions = () => {
+interface FaqProps {
+    id: number,
+    question: string,
+    answer: string
+}
 
-    interface FaqProps {
-        id: number,
-        question: string,
-        answer: string
-    }
+const Accordions = () => {
 
     const FaqValue: Array<FaqProps> = [
         {
@@ -39,7 +39,7 @@ const Accordions = () => {
                 {FaqValue.map((faq, index) => {
                     const { question, answer } = faq
                     return (
-                        <Accordion.Item eventKey={`${index}`}>
+                        <Accordion.Item eventKey={`${index}`} key={index}>
                             <Accordion.Header>{question}</Accordion.Header>
                             <Accordion.Body>
                                 {answer}

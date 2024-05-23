@@ -3,14 +3,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 import ServicesCard from './Card/ServicesCard';
 import carIcon from '@/assets/icons/clarity_car-line.svg';
 import Tags from './Tags';
+interface ServiceProps {
+    id: number,
+    icon: any,
+    title: string,
+    subtitle: string
+}
 
 const Services = () => {
-    interface ServiceProps {
-        id: number,
-        icon: any,
-        title: string,
-        subtitle: string
-    }
 
     const servicesValue: Array<ServiceProps> = [
         {

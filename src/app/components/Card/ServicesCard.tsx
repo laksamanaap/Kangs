@@ -1,7 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 
-const ServicesCard = ({ id, icon, title, subtitle }: any) => {
+interface ServiceCardProps {
+  id: number,
+  icon: any,
+  title: string,
+  subtitle: string
+}
+
+const ServicesCard = ({ id, icon, title, subtitle }: ServiceCardProps) => {
   return (
     <>
       <div className='services-card__wrapper'>

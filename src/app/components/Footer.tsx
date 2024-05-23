@@ -19,7 +19,7 @@ const Footer = () => {
                 <div className="footer__content-left-wrap">
                   <Image src={logoKangs} alt={'logo-footer'} width={100} height={100} />
                   <div className="footer__description paragraph-normal-regular">
-                    Experience unforgettable vacations with us! We create tailored getaways for every dream. From beaches to mountains, we've got you covered. Let's make your wanderlust a reality
+                    Experience unforgettable vacations with us! We create tailored getaways for every dream. From beaches to mountains, weve got you covered. Lets make your wanderlust a reality
                   </div>
                   <div className="footer__socials">
                     <div className="footer__socials-item" >

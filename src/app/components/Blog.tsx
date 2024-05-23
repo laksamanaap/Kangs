@@ -6,17 +6,18 @@ import BlogCard from './Card/BlogCard';
 import tumpakSewuImage1 from '@/assets/tumpakSewu/tumpakSewu1.JPG';
 import Tags from './Tags';
 
+interface BlogProps {
+    id: number,
+    info: string,
+    image: any,
+    title: string,
+    date: string,
+    subtitle: string,
+    tags: string[],
+    author: string
+}
+
 const Blog = () => {
-    interface BlogProps {
-        id: number,
-        info: string,
-        image: any,
-        title: string,
-        date: string,
-        subtitle: string,
-        tags: string[],
-        author: string
-    }
 
     const blogValues: Array<BlogProps> = [
         {
@@ -66,7 +67,7 @@ const Blog = () => {
                     <Col>
                         <div className='blog__subtitle-wrapper'>
                             <span className='blog__subtitle'>
-                                Step into Our Travel World! Immerse yourself in captivating stories, gain invaluable tips, and uncover hidden gems from across the globe. Embark on unforgettable journeys with us and let's make every adventure count!
+                                Step into Our Travel World! Immerse yourself in captivating stories, gain invaluable tips, and uncover hidden gems from across the globe. Embark on unforgettable journeys with us and lets make every adventure count!
                             </span>
                             <Link href={'#'} className='packages__button-outline'>See All</Link>
                         </div>
